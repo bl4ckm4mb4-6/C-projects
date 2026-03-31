@@ -20,7 +20,9 @@ In Dev-C++, you compile the file first and then run it.
 In the command prompt or PowerShell, use this commands:
 
 ```bash
-    gcc main.c persona.c -o programma
+    gcc main.c persona.c -o programName
     
-    ./programma
+    ./programName
 ```
+
+The name of the executable file can be changed as desired, or for simplicity, the name of the source code can be used.
