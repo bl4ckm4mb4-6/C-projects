@@ -29,10 +29,11 @@ Both projects are developed for **Windows** systems and use native networking AP
 * `string.h`: For manipulating strings and data buffers.
 
 
-## 🚀 How to compile and run (GCC)
-1a. In Dev-C++, you compile the file first, but you have to link `winsock2` library. Go to compilation options and type this: `-lws2_32`.
+## 🚀 How to compile and run (GCC):
 
-1b. If you prefer command line type these:
+1a. **In Dev-C++, you compile the file first, but you have to link `winsock2` library. Go to compilation options and type this: `-lws2_32`.**
+
+1b. **If you prefer command line type these:**
 - For pscan
 
 ```bash
@@ -44,7 +45,7 @@ Both projects are developed for **Windows** systems and use native networking AP
     gcc lping.c -o lping.exe -lws2_32
 ```
 
-2. Then in the command prompt or PowerShell, use this commands:
+2. **Then in the command prompt or PowerShell, use this commands:**
 
 - For pscan
 
@@ -60,7 +61,8 @@ Both projects are developed for **Windows** systems and use native networking AP
 
 Both have help commands that are: `?`, `h`, `help`, `-h`, `--help` and `/?`.
 
-Alternatively, you can add the folder containing pscan and lping to your PATH, which will simplify the command:
+---
+Alternatively, you can add the folder containing pscan and lping to your `PATH`, which will simplify the command:
 
 ```bash
     pscan <IP> <start_port> <end_port>
