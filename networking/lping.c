@@ -9,6 +9,7 @@
 #define ERR 1
 #define HELP 2
 
+// Struttura pacchetto ICMP
 typedef struct {
     unsigned char  type;     // 8 = ICMP_ECHO_REQUEST , 0 = ICMP_ECHO_REPLY
     unsigned char  code;     // 0
