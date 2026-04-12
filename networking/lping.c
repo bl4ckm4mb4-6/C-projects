@@ -151,7 +151,7 @@ int main(int argc, char *argv[]){
     
     printf("\n\nStatistiche LPing per %s:\n", target_ip);
 	printf("\tPacchetti: Trasmessi = %d, Ricevuti = %d,\n", send_pkt, recv_pkt);
-	printf("\tPersi = %d (%.0f%% persi),\n", send_pkt - recv_pkt, (float)(100 - (recv_pkt/send_pkt)*100));
+	printf("\tPersi = %d (%.0f%% persi),\n", send_pkt - recv_pkt, (100.0 - ((float) recv_pkt/send_pkt)*100));
 	printf("Tempo approssimativo percorsi andata/ritorno in millisecondi:\n");
 	printf("\tMinimo = %lums, Massimo =  %lums, Medio =  %lums", min_ms, max_ms, media(media_ms, recv_pkt));
     return 0;	
