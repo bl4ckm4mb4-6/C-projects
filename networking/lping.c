@@ -176,8 +176,8 @@ unsigned long media(DWORD media_ms[], int recv_pkt){
 		return 0;
 
 	unsigned long media = 0;
-	for(int i=0;i<4;i++){
+	for(int i=0;i<recv_pkt;i++){
 		media += media_ms[i];
 	}
-	return media/4;
+	return media/recv_pkt;
 }
